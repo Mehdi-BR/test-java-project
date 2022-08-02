@@ -19,11 +19,11 @@ public class TestMessages {
         Assertions.assertEquals("Please Provide a name!", obj.getMessage(""));
     }
 
-//    @Test
-//    public void testNameNull()
-//    {
-//        Messages obj = new Messages();
-//        Assertions.assertEquals("Please Provide a name!", obj.getMessage(null));
-//    }
+    @Test
+    public void testNameNull()
+    {
+        Messages obj = new Messages();
+        Assertions.assertEquals("Please Provide a name!", obj.getMessage(null));
+    }
 
 }
