@@ -1,6 +1,9 @@
 #!groovy
 pipeline {
   agent none
+  tools{
+  jdk '11'}
+  
   stages {    
 stage('Maven Install') {
      agent {        
