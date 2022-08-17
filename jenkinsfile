@@ -5,6 +5,15 @@ pipeline {
   jdk '11'}
   
   stages {    
+stage('Example'){
+  steps{
+    sh '''
+    env | grep -e PATH -e JAVA_HOME
+    which java
+    java -version'''
+}
+ }
+     
 stage('Maven Install') {
      agent {        
 docker {          
